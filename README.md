@@ -15,4 +15,4 @@ This web application allows users to convert temperatures between Fahrenheit and
 ## Usage
 1. **Clone the repository to your local machine:**
 ```bash
-git clone https://github.com/your-username/temperature-converter.git
+git clone https://github.com/your-username/filename.git
