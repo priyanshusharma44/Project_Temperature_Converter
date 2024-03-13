@@ -1,18 +1,51 @@
-Temperature Processing System 
-1)Priyanshu sharma
-2)NIraj Shrestha
-3)Manan Neupane
+# **Temperature Processing System
 
-front end(html css) - Manan
-Frontend (js) - Niraj 
-backend - Priyanshu
-database - priyanshu
+Team Members:
 
+Priyanshu Sharma - Backend Developer
+Niraj Shrestha - Frontend (JavaScript) Developer
+Manan Neupane - Frontend (HTML/CSS) Developer
+Project Description:
+This project is a collaborative effort between Priyanshu, Niraj, and Manan to create a web application for temperature conversion. The application allows users to convert temperatures between Fahrenheit and Celsius using a simple and intuitive interface.
 
+Objective:
+The objective of this project is to develop a web application that utilizes PHP for server-side processing and JavaScript for client-side interactivity. The application should provide users with the ability to input a temperature value and select the input and output temperature units (Fahrenheit or Celsius). Upon triggering the conversion process, the application should display the converted temperature without refreshing the webpage.
 
+Project Components:
 
+Backend (Priyanshu Sharma):
 
+Developed the server-side PHP script to handle temperature conversion logic.
+Implemented conversion formulas to convert temperatures between Fahrenheit and Celsius.
+Communicated with the client-side JavaScript to retrieve input data and return converted temperature values.
+Frontend (JavaScript) (Niraj Shrestha):
 
+Developed client-side JavaScript code to handle user input and trigger temperature conversion.
+Utilized event listeners to detect changes in input temperature value and selected units.
+Calculated converted temperature based on selected units and displayed the result on the webpage without refreshing.
+Frontend (HTML/CSS) (Manan Neupane):
 
+Designed a simple and user-friendly HTML interface for the temperature converter application.
+Implemented CSS styling to improve the visual appearance of the interface, including alignment, spacing, and formatting of input fields, buttons, and result display.
+Instructions for Running the Application:
 
+Clone the project repository from the GitHub repository link provided.
+Ensure that you have a compatible web server environment set up (such as Apache or Nginx) with PHP support.
+Open the project directory in your preferred code editor.
+Start the web server and navigate to the project directory in your web browser.
+You should see the temperature converter interface designed by Manan.
+Enter a temperature value and select the input and output temperature units.
+Click the conversion button to trigger the conversion process.
+The converted temperature will be displayed on the webpage without refreshing, thanks to the client-side JavaScript code developed by Niraj and the server-side PHP script developed by Priyanshu.
+Note: Ensure that all team members' contributions are integrated properly and that the project runs smoothly before deployment. Collaboration and communication between team members are crucial for the success of the project.
 
+Project Repository Link: [Provide GitHub repository link here]
+
+Contact Information:
+For any inquiries or assistance regarding the project, please contact the respective team members:
+
+Priyanshu Sharma: [Email/Contact Number]
+Niraj Shrestha: [Email/Contact Number]
+Manan Neupane: [Email/Contact Number]
+Acknowledgments:
+We would like to thank each team member for their contributions to this project. Additionally, we extend our gratitude to our mentors and peers for their support and guidance throughout the development process.
