@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading{
+    margin-bottom: 60px;
+    color: green;
+    font-size: 80px;
+}
+
+
+.temp-form {
+    display: inline-block ;
+    text-align: center;
+    border: 2px solid #ccc;
+    box-shadow: 10px 10px 5px gray;
+    height: 50vh;
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: gainsboro;
+}
+
+.inputtemp{
+    width: 370px;
+    height: 30px;
+    border-color: blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.temp-inp {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: orangered;
+}
+.label1 {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: brown;
+}
+.label{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+
+input[type="number"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+        text-align: center;
+        border: 2px solid #ccc;
+        color: azure;
+        box-shadow: 10px 10px 5px gray;
+        height: 10vh;
+        width: 450px;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 30px;
+        margin-left: 450px;
+}
