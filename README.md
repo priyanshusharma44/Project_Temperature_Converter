@@ -1,8 +1,8 @@
-#Temperature Converter Web Application
-Overview
+#**Temperature Converter Web Application
+*Overview
 This web application allows users to convert temperatures between Fahrenheit and Celsius using PHP for server-side processing and JavaScript for client-side interactivity.
 
-##Features
+**Features
 HTML interface for user interaction
 Client-side JavaScript for dynamic updates
 Server-side PHP for temperature conversion logic
@@ -20,14 +20,12 @@ bash
 Copy code
 cd temperature-converter
 Start a local web server. You can use PHP's built-in server for this purpose:
+bash
 Copy code
 php -S localhost:8000
 Open your web browser and go to http://localhost:8000 to access the application.
-
 Enter the temperature value and select the input and output units (Fahrenheit or Celsius).
-
 Click the "Convert" button to see the converted temperature.
-
 File Structure
 index.html: HTML interface for the temperature converter.
 script.js: Client-side JavaScript code for handling user input and triggering temperature conversion.
