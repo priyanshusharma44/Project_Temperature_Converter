@@ -1,6 +1,4 @@
 # **Temperature Converter Web Application**
-# **Temperature Converter Web Application**
-
 ## Overview
 This web application allows users to convert temperatures between Fahrenheit and Celsius using PHP for server-side processing and JavaScript for client-side interactivity.
 
