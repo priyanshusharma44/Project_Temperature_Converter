@@ -1,27 +1,38 @@
-const form = document.getElementById('tempConverter');
-const inputTemp = document.getElementById('inputTemp');
-const result = document.getElementById('result');
-const convertButton = document.getElementById('btn');
+// JavaScript code for temperature conversion and form handling
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("temperatureForm");
+  const resultDiv = document.getElementById("result");
 
-convertButton.addEventListener('click', handleConversion);
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-function handleConversion(event) {
-  event.preventDefault(); // Prevent default form submission if the button type is changed to "submit"
+    const temperatureInput = parseFloat(
+      document.getElementById("temperature").value
+    );
+    const inputUnit = document.querySelector(
+      'input[name="inputUnit"]:checked'
+    ).value;
+    const outputUnit = document.querySelector(
+      'input[name="outputUnit"]:checked'
+    ).value;
 
-  const temp = parseFloat(inputTemp.value);
-  const fromUnit = document.querySelector('input[name="unit_from"]:checked').value;
-  const toUnit = document.querySelector('input[name="unit_to"]:checked').value;
+    if (isNaN(temperatureInput)) {
+      resultDiv.textContent = "Invalid input temperature.";
+      return;
+    }
 
-  fetch('convert.php', {
-    method: 'POST',
-    body: JSON.stringify({ temp, fromUnit, toUnit })
-  })
-  .then(response => response.json())
-  .then(data => {
-    result.textContent = `The Converted temperature is: ${data.convertedTemp} ${toUnit}`;
-  })
-  .catch(error => {
-    console.error(error);
-    result.textContent = 'Error: Conversion failed.';
+    let convertedTemperature;
+
+    if (inputUnit === "fahrenheit" && outputUnit === "celsius") {
+      convertedTemperature = (temperatureInput - 32) * (5 / 9);
+    } else if (inputUnit === "celsius" && outputUnit === "fahrenheit") {
+      convertedTemperature = (temperatureInput * 9) / 5 + 32;
+    } else {
+      convertedTemperature = temperatureInput;
+    }
+
+    resultDiv.textContent = `Converted Temperature: ${convertedTemperature.toFixed(
+      2
+    )} ${outputUnit}`;
   });
-}
+});
