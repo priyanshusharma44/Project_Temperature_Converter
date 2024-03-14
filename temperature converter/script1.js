@@ -1,4 +1,4 @@
-// JavaScript code for temperature conversion and form handling
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("temperatureForm");
   const resultDiv = document.getElementById("result");
@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
       convertedTemperature = temperatureInput;
     }
 
-    resultDiv.textContent = `Converted Temperature: ${convertedTemperature.toFixed(
-      2
-    )} ${outputUnit}`;
+    resultDiv.textContent = `Converted Temperature: ${convertedTemperature.toFixed( 2 )} ${outputUnit}`;
   });
 });
