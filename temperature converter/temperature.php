@@ -1,20 +1,24 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $data = json_decode(file_get_contents('php://input'), true);
+if ($_SERVER["REQUEST_METHOD"] == "POST") { // Check if the form is submitted with POST method
+    // Retrieve the input values from the form
+    $temperatureValue = $_POST["temperatureValue"];
+    $inputUnit = $_POST["inputUnit"];
+    $outputUnit = $_POST["outputUnit"];
 
-  $temp = $data['temp'];
-  $fromUnit = $data['fromUnit'];
-  $toUnit = $data['toUnit'];
-
-  if ($fromUnit === 'Fahrenheit' && $toUnit === 'Celsius') {
-    $convertedTemp = (5/9) * ($temp - 32);
-  } else if ($fromUnit === 'Celsius' && $toUnit === 'Fahrenheit') {
-    $convertedTemp = (9/5) * $temp + 32;
-  } else {
-    $convertedTemp = $temp;
-  }
-
-  echo json_encode(['convertedTemp' => $convertedTemp]);
+    // Check if the input temperature is a valid number
+    if (!is_numeric($temperatureValue)) {
+        echo "Invalid input temperature.";
+        exit;
+    }
+    if ($inputUnit == "fahrenheit" && $outputUnit == "celsius") {
+        $convertedTemperature = ($temperatureValue - 32) * (5/9);
+    } elseif ($inputUnit == "celsius" && $outputUnit == "fahrenheit") {
+        $convertedTemperature = ($temperatureValue * 9/5) + 32;
+    } else {
+        $convertedTemperature = $temperatureValue;
+    }
+    echo "The output is: {$convertedTemperature}";
 } else {
-  echo 'Invalid request.';
+    echo "Invalid request method.";
 }
+?>
